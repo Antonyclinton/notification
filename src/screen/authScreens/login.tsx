@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Image, Text, TextInput, TouchableOpacity, View, KeyboardAvoidingView, SafeAreaView, ScrollView } from "react-native";
 import { Styles } from "./authStyles";
+import { PRIMARY_COLOR } from "../../service/config";
 
 
 const Login = (props:any) => {
@@ -20,7 +21,7 @@ const Login = (props:any) => {
             <View style={Styles.Container}>
                 {/* <Text style={{fontSize: 35,fontWeight:700,color:"#000"}}><Text style={{color:"purple",fontSize:38}}>L</Text>ogin</Text> */}
                 <Text style={Styles.helloThere}>Hello there !</Text>
-                <Text style={Styles.welcomeText}><Text style={{ color: "purple", fontSize: 41 }}>Welcome </Text>back</Text>
+                <Text style={Styles.welcomeText}><Text style={{ color: PRIMARY_COLOR, fontSize: 41 }}>Welcome </Text>back</Text>
                 
                 <TextInput style={Styles.mobileInput} placeholder="Mobile Number" />
                 

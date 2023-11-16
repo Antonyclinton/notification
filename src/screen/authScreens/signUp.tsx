@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Image, SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Styles } from "./authStyles";
+import { PRIMARY_COLOR } from "../../service/config";
 
 
 const SignUp = (props: any) => {
@@ -17,7 +18,7 @@ const SignUp = (props: any) => {
         <SafeAreaView>
             <ScrollView automaticallyAdjustKeyboardInsets={true}>
                 <Image source={require('../../assests/signup.png')} />
-                <Text style={{ color: "purple", fontSize: 25, textAlign: "center", fontWeight: "800", marginBottom: 30 }}>
+                <Text style={{ color: PRIMARY_COLOR, fontSize: 25, textAlign: "center", fontWeight: "800", marginBottom: 30 }}>
                     <Text style={{ color: "#000", fontSize: 35 }}>Create</Text> an account</Text>
                 <View style={Styles.contentContainer}>
                     <Text style={Styles.userNameText}>

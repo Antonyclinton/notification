@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { PRIMARY_COLOR } from "../../service/config";
 
 export const Styles = StyleSheet.create({
     Container:{
@@ -20,7 +21,7 @@ export const Styles = StyleSheet.create({
         fontSize: 15 
     },
     loginTextCont:{ 
-        backgroundColor: "purple", 
+        backgroundColor: PRIMARY_COLOR, 
         padding: 10, 
         marginTop: "10%", 
         alignItems: "center", 
@@ -33,7 +34,7 @@ export const Styles = StyleSheet.create({
         marginTop: "5%" 
     },
     signupText:{ 
-        color: "purple", 
+        color: PRIMARY_COLOR, 
         textDecorationLine: "underline",
     },
     userNameText:{
